@@ -1,0 +1,85 @@
+*{
+    background-color: #53eafe;
+}
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+h1{
+    color:rgb(34,20,90);
+   margin-left: 70px;
+}
+
+.grid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.header{
+    background-color: rgb(22, 200, 255);
+    display:flex;
+    justify-content: space-evenly;
+    outline-style:double; 
+    outline-width: 10px; ;   
+}
+.header *{
+    border: solid;
+}
+.description{
+    display:flex;
+    justify-content:first baseline;
+    flex-direction:column;
+    background-color: rgb(243, 20, 206);
+    outline-style: double;
+    outline-color: rgb(255, 230, 0);
+    outline-width: 3px;
+}
+.description {
+    border: solid;
+    margin-left: 40px;
+}
+.item{
+    display:flex;
+    justify-content:first baseline;
+    flex-wrap: wrap;
+}
+.item {
+    border:solid;
+    margin-left: 60px;
+    border-style: ridge;
+    border-color: rgb(231, 62, 90);
+    border-radius: 10px;
+}
+.item{
+    position: relative;
+}
+.item p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    opacity:0;
+}
+.item:hover p{
+opacity:1;
+}
+.item:hover img{
+    opacity:0.333;
+}
+.footer{
+    justify-content:'center';
+    flex-wrap:wrap-reverse;
+   
+    
+}
+.footer {
+    border: dotted;
+    margin-left:60px;
+    border-style: groove; 
+    border-color: rgb(143, 86, 197);
+    
+}
